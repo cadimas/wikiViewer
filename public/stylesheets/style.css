@@ -1,0 +1,118 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+/* RESULTS STYLING */
+#results {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  z-index: -1;
+}
+
+.box {
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0.2px 0.2px 0.2px #ffffff;
+  color: black;
+  display: block;
+  border: 1.5px solid LightBlue;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: ;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  text-shadow: 0.2px 0.2px 0.2px #000000;
+  background-color: LightBlue;
+  color: white;
+  font-weight: bold;
+}
+/*END OF RESULTS STYLING*/
+
+/* AUTOCOMPLETE STYLING*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  /*max-width: 160px;*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-el {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-el:hover {
+  background-color: #ddd;
+}
+
+.changeBackground {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+/*END OF AUTOCOMPLETE STYLING*/
+
+/* INPUT STYLES*/
+.input {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  font-size: 25px;
+  font-family: "Karma", serif;
+  background-color: white;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-64.png");
+  background-position: 2.5px 2.5px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.animateInput {
+  width: 50%;
+  border-radius: 2px;
+  padding-left: 90px;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-64.png"),
+    url("https://image.flaticon.com/icons/svg/126/126487.svg");
+  background-position: 2.5px 2.5px, 97%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 35px 30px;
+}
+
+/*END OF INPUT STYLES*/
